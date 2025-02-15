@@ -1,6 +1,7 @@
 package pe.edu.senati.apkrunners.ui;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -39,5 +40,7 @@ public class Login extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         context = getContext();
         navController = Navigation.findNavController(view);
+
+        //binding.tvTerminos.setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW)));
     }
 }
